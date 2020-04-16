@@ -1,6 +1,6 @@
 # Project: To be or not to be
 
-This project evolves a line of text from randomly generated strings, using a classic genetic algorithm, modeled as a simplistic version of genetic evolution in the real world.
+This project evolves a line of text from randomly generated strings, using a classic genetic algorithm, modeled as a simplistic version of genetic evolution in the real world. The code(.h files) is well documented.
 
 ### DNA Class:
 Contains the base DNA of text object.
