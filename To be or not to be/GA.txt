@@ -1,0 +1,35 @@
+1. Select those with higher fitness favorably, from the population,
+    and build a mating pool.
+2. Select two different parents from the mating pool randomly (or according to fitness
+    if not building a mating pool) and cross them over. ie get a child.
+3. Generate a new population using the children from step 2.
+4. Go to step 1.
+
+
+How to generate comparison doubles?
+1. map(DNA.fitness, 0, 100, 0, total_fitness)
+    ie DNA.fitness/total_fitness * 100
+        maybe remove the floor later if not working as expected.
+        scratch that, remove the floor.
+
+
+Function to compare and select?
+r = random(0ld, 100ld)
+
+// example
+a = 10, b = 50, c = 40;
+while (true)
+    if      (r < pa + 0)             return a;
+    else if (r < pb + pa)        return b;
+    else if (r < pc + (pb + pa)) return c;
+
+
+
+// our use case
+net_prob = 0;
+for (int = 0; i < population.size(); i++)
+{
+    if (r < prob[i] + net_prob) return population[i];
+
+    net_prob += prob[i]
+}
